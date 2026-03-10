@@ -1,26 +1,46 @@
 {
-  "name": "@tatelyman/readme-gen",
-  "version": "1.0.0",
-  "description": "Auto-generate a README.md from your package.json and project structure.",
-  "bin": {
-    "readme-gen": "bin/readme-gen.js"
-  },
-  "keywords": [
-    "readme",
-    "generator",
-    "documentation",
-    "markdown",
-    "cli",
-    "scaffold"
-  ],
-  "author": "Tate Lyman",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/TateLyman/readme-gen-cli.git"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "homepage": "https://github.com/TateLyman/readme-gen-cli"
+	"name": "@involvex/readme-cli",
+	"version": "1.0.0",
+	"description": "Auto-generate a README.md from your package.json and project structure.",
+	"keywords": [
+		"readme",
+		"generator",
+		"documentation",
+		"markdown",
+		"cli",
+		"scaffold"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/involvex/readme-gen-cli.git"
+	},
+	"funding": {
+		"url": "https://github.com/sponsors/involvex"
+	},
+	"license": "MIT",
+	"author": "Involvex",
+	"bin": {
+		"readme-cli": "bin/readme-cli.js"
+	},
+	"files": [
+		"bin/readme-gen.js",
+		"README.md"
+	],
+	"scripts": {
+		"dev": "bun run bin/readme-gen.js",
+		"format": "prettier --write ."
+	},
+	"prettier": "@involvex/prettier-config",
+	"devDependencies": {
+		"@involvex/prettier-config": "^0.0.4",
+		"prettier-plugin-organize-imports": "^4.3.0",
+		"prettier-plugin-packagejson": "^3.0.2",
+		"prettier-plugin-sort-imports": "^1.8.11"
+	},
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"sponsor": {
+		"url": "https://github.com/sponsors/involvex"
+	}
 }

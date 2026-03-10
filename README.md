@@ -10,32 +10,32 @@ Run `readme-gen` in any Node.js project and get a complete, professional README 
 
 ```bash
 # npm
-npm install -g readme-gen-cli
+npm install -g @involvex/readme-cli
 
 # yarn
-yarn global add readme-gen-cli
+yarn global add @involvex/readme-cli
 
 # pnpm
-pnpm add -g readme-gen-cli
+pnpm add -g @involvex/readme-cli
 ```
 
 ## Usage
 
 ```bash
 # Preview README (prints to stdout)
-readme-gen
+readme-cli
 
 # Write to file
-readme-gen -o README.md
+readme-cli-o README.md
 
 # Overwrite existing README
-readme-gen -o README.md --force
+readme-cli -o README.md --force
 
 # Generate a shorter version
-readme-gen --minimal
+readme-cli --minimal
 
 # Run against a different directory
-readme-gen /path/to/project
+readme-cli /path/to/project
 ```
 
 ## What It Generates
@@ -65,7 +65,7 @@ Use `--minimal` to skip the table of contents, project structure, and contributi
 
 ## Example Output
 
-Running `readme-gen` in a project produces markdown like:
+Running `readme-cli` in a project produces markdown like:
 
 ```markdown
 # my-awesome-tool
@@ -84,30 +84,19 @@ my-awesome-tool --help
 
 ## Available Scripts
 
-| Script | Command |
-| ------ | ------- |
-| npm run build | tsc |
-| npm run test | jest |
+| Script        | Command |
+| ------------- | ------- |
+| npm run build | tsc     |
+| npm run test  | jest    |
 
 ## Project Structure
 
 my-awesome-tool/
 |-- src/
-|   |-- index.ts
-|   |-- utils.ts
+| |-- index.ts
+| |-- utils.ts
 |-- bin/
-|   |-- cli.js
+| |-- cli.js
 |-- package.json
 |-- tsconfig.json
-
-## Dependencies
-...
 ```
-
-## Zero Dependencies
-
-This tool has **no dependencies**. It uses only Node.js built-in modules (`fs`, `path`). Install it and it just works.
-
-## License
-
-[MIT](./LICENSE) -- Tate Lyman
