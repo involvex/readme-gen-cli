@@ -1,0 +1,26 @@
+{
+  "name": "@tatelyman/readme-gen",
+  "version": "1.0.0",
+  "description": "Auto-generate a README.md from your package.json and project structure.",
+  "bin": {
+    "readme-gen": "bin/readme-gen.js"
+  },
+  "keywords": [
+    "readme",
+    "generator",
+    "documentation",
+    "markdown",
+    "cli",
+    "scaffold"
+  ],
+  "author": "Tate Lyman",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TateLyman/readme-gen-cli.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "homepage": "https://github.com/TateLyman/readme-gen-cli"
+}
