@@ -20,7 +20,7 @@
 	"license": "MIT",
 	"author": "Involvex",
 	"bin": {
-		"readme-cli": "bin/readme-cli.js"
+		"readme-cli": "bin/readme-gen.js"
 	},
 	"files": [
 		"bin/readme-gen.js",
